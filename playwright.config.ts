@@ -9,7 +9,8 @@ export default defineConfig({
   fullyParallel: false,
   retries: 1,
   workers: 1,
-  reporter: [['html', { outputFolder: 'reports/playwright-report', open: 'never' }],['github']],
+  outputDir: 'reports/test-results',
+  reporter: [['html', { outputFolder: 'reports/playwright-report', open: 'never' }], ['github']],
   use: {
     baseURL: ENV.baseURL,
     trace: 'on-first-retry',

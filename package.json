@@ -4,7 +4,16 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:seed": "playwright test seed.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report reports/playwright-report",
+    "test:seed": "playwright test tests/seed.spec.ts",
+    "test:api": "playwright test tests/api",
+    "test:auth": "playwright test tests/auth",
+    "test:dashboard": "playwright test tests/dashboard",
+    "test:navigation": "playwright test tests/navigation",
+    "typecheck": "tsc --noEmit",
     "mcp": "playwright run-test-mcp-server"
   },
   "keywords": [],
@@ -12,6 +21,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.59.1"
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2",
+    "typescript": "^6.0.2"
   }
 }
