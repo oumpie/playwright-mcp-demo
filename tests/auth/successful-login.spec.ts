@@ -24,6 +24,6 @@ test.describe('Authentication', () => {
     await expect(dashboard.heading).toBeVisible();
 
     // 5. Verify: Sidebar navigation is visible
-    await expect(dashboard.sidebar).toBeVisibleSHOULDFAIL();
+    await expect(dashboard.sidebar).toBeVisible();
   });
 });
