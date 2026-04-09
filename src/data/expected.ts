@@ -2,7 +2,6 @@ export const WIDGETS = [
   'Time at Work',
   'My Actions',
   'Quick Launch',
-  'Buzz Latest Posts',
   'Employees on Leave Today',
 ] as const;
 

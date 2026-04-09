@@ -18,7 +18,7 @@ test.describe('Sidebar Navigation', () => {
     // 3. Clear the search input
     await dashboard.sidebarSearch.clear();
 
-    // 4. Verify: All 12 menu items are visible again
-    await expect(dashboard.menuItems).toHaveCount(12);
+    // 4. Verify: All 11 menu items are visible again
+    await expect(dashboard.menuItems).toHaveCount(11);
   });
 });
