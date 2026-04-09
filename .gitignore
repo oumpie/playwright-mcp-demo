@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Playwright test output
+test-results/
+playwright-report/
+reports/playwright-report/
+reports/test-results/
+*.zip
+
+# Playwright MCP runtime logs & snapshots
+.playwright-mcp/
+
+# Environment overrides
+.env
+.env.*
+
+# Third-party AI tools (auto-generated, not needed)
+.qodo/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/settings.json
