@@ -1,0 +1,4 @@
+# Ignore all generated test output
+playwright-report/
+test-results/
+*.zip
